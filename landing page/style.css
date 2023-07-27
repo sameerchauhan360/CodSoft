@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 /*                      Header */
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
 nav {
     position: fixed;
     display: flex;
@@ -252,38 +257,143 @@ nav ul li a:hover {
 }
 
 .product {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 28px 38px;
+}
+
+.product .box-container .box {
+    width: 18.5rem;
+    height: 24rem;
+    position: relative;
+}
+
+.product .box-container .box:hover {
+    box-shadow: 0 0 10px #333;
+    transform: scale(1.01);
+}
+
+.product .box-container #box-1 {
+    background: url(product1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.product .box-container #box-2 {
+    background: url(product2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.product .box-container #box-3 {
+    background: url(product3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.product .box-container #box-4 {
+    background: url(product4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.product .box-container #box-5 {
+    background: url(product5.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.product .box-container #box-6 {
+    background: url(product6.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.product .box-container .box .discount {
+    background-color: pink;
+    width: 54px;
+    height: 30px;
+    margin: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product .box-container .box .detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.product .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
-    justify-items: center;
-    gap: 23px;
-}
-
-.product .cards .box h1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    bottom: 75px;
-}
-.product .cards .box .discount {
+.product .box-container .box .detail h1 {
     position: absolute;
-    z-index: 1;
-    margin: 8px 9px;
-    color: #7c00ff;
-    font-size: 23px;
+    width: 100%;
+    bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
-.product .cards .box img {
+.product .box-container .box .detail h1:nth-child(2) {
+    bottom: 6px;
+    color: rgb(241, 8, 47);
+    backdrop-filter: blur(20px);
+}
+
+.product .box-container .box .detail h1 strike {
+    color: black;
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: black;
+    height: 5rem;
     width: 100%;
-    height: 100%;
-    border: 2px solid black;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    color: white;
+    flex-direction: column;
+}
+
+footer .icon {
+    display: flex;
+    gap: 2rem;
+}
+
+footer a {
+    color: white;
+    font-size: 33px;
+}
+footer a:hover {
+    color: var(--clr);
+}
+
+footer p{
+    font-size: 20px;
+}
+footer p span{
+    font-size: 23px;
+    color: rgb(255, 74, 255);
 }
