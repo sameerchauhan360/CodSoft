@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*                      Header */
+
 nav {
     position: fixed;
     display: flex;
@@ -12,6 +14,7 @@ nav {
     width: 100%;
     gap: 5%;
     box-shadow: 0 0 13px #333;
+    z-index: 100;
 }
 
 .logo {
@@ -61,9 +64,10 @@ nav ul li a:hover {
     color: pink;
 }
 
+/*                        Home */
 .home {
     display: flex;
-    /* position: relative; */
+    position: relative;
     align-items: center;
     min-height: 100vh;
 
@@ -119,6 +123,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgb(243, 4, 44);
 }
 
+/*                      About */
 .heading {
     display: flex;
     align-items: center;
@@ -153,7 +158,7 @@ nav ul li a:hover {
     gap: 35px;
 }
 
-.video-container {
+.about .row .video-container {
     position: relative;
 }
 
@@ -187,6 +192,7 @@ nav ul li a:hover {
     margin: 19px 0;
 }
 
+/*                     .icon-conta */
 .icon-conta {
     display: flex;
     align-items: center;
@@ -226,4 +232,58 @@ nav ul li a:hover {
 
 .icon-conta div i {
     font-size: 32px;
+}
+
+/*                      Product */
+.heading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 210, 217);
+    font-size: 43px;
+    font-weight: bold;
+    width: 80vw;
+    height: 3rem;
+}
+
+.heading span {
+    margin: 10px;
+    color: rgb(158, 17, 40);
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    justify-items: center;
+    gap: 23px;
+}
+
+.product .cards .box h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 75px;
+}
+.product .cards .box .discount {
+    position: absolute;
+    z-index: 1;
+    margin: 8px 9px;
+    color: #7c00ff;
+    font-size: 23px;
+}
+
+.product .cards .box img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    position: relative;
 }
