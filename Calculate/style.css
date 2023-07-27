@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+body {
+    background-color: rgb(2, 2, 24);
+    background: linear-gradient(35deg,black,rgb(15, 2, 39));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline red;
+}
+
+.container {
+    padding: 8px 0;
+    margin-top: 43px;
+    height: 538px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0 3px 15px rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 85%;
+    outline: none;
+    text-align: end;
+    padding: 20px;
+    font-size: 40px;
+    box-shadow: 0 3px 15px rgb(128, 128, 128, 0.5);
+    cursor: default;
+    margin: 28px 2px;
+}
+
+
+.container div {
+    margin-top: 6px;
+    width: 85%;
+    height: 14%;
+}
+
+button {
+    margin: -7px 10px;
+    width: 18%;
+    height: 90%;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgb(128, 128, 128, 0.3);
+    cursor: pointer;
+}
+
+.equalbtn {
+    background-color: orangered;
+}
+
+.operator {
+    color: greenyellow;
+}
+
+button:active {
+    transform: scale(.94);
+    color: red;
+}
+
+@media (max-width: 504px) {
+    .container {
+        width: 88vw;
+    }
+
+    .container div {
+        margin-top: 6px;
+        width: 85%;
+        height: 14%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    button {
+        width: 18%;
+        height: 74%;
+    }
+
+}
