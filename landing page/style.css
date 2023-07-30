@@ -6,11 +6,12 @@
 }
 
 /*                      Header */
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+
 nav {
     position: fixed;
     display: flex;
@@ -386,14 +387,16 @@ footer a {
     color: white;
     font-size: 33px;
 }
+
 footer a:hover {
     color: var(--clr);
 }
 
-footer p{
+footer p {
     font-size: 20px;
 }
-footer p span{
+
+footer p span {
     font-size: 23px;
     color: rgb(255, 74, 255);
 }
