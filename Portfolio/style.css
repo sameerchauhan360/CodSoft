@@ -7,13 +7,19 @@
     font-family: 'IBM Plex Serif', serif;
 }
 
+header {
+    z-index: 100;
+    position: relative;
+}
+
 nav {
+    position: fixed;
     background-color: white;
     height: 4rem;
     display: flex;
     align-items: center;
     box-shadow: 0 -3px 14px #333;
-    ;
+    width: 100%;
 }
 
 nav .heading h1 {
@@ -67,5 +73,176 @@ nav .navbar ul li a:hover::after {
 
 nav .navbar ul li a:hover {
     color: blue;
+}
 
+/* --------------------------Home-------------------------- */
+.home {
+    width: 100%;
+    height: 100vh;
+    background: rgb(167, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.home .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.home .heading h1 {
+    font-size: 40px;
+    color: rgb(4, 4, 99);
+}
+
+.home .heading h1 span {
+    color: orangered;
+}
+
+.home .heading p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.home .heading .dynamic {
+    display: flex;
+    align-items: center;
+
+}
+
+.home .heading .dynamic .dynamic-txt {
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.home .heading .dynamic-txt li {
+    list-style: none;
+    position: relative;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+    color: purple;
+    animation: slide-up 4s infinite alternate steps(4);
+}
+
+.home .heading .dynamic-txt li::after {
+    content: '';
+    position: absolute;
+    border-left: 3px solid black;
+    height: 100%;
+    width: 0px;
+    right: 0;
+    background-color: rgb(167, 243, 243);
+    animation: typing 2s steps(20) infinite alternate;
+}
+
+@keyframes typing {
+    to {
+        width: 110%;
+    }
+}
+
+@keyframes slide-up {
+    to {
+        top: -58px;
+    }
+}
+
+.home .heading>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue;
+    padding: 6px 11px;
+    border-radius: 32px;
+    margin: 7px 0;
+    width: 9rem;
+    height: 3rem;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.home .heading>a>i {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+    width: 17px;
+    height: 17px;
+    padding: 0 6px;
+    margin: 0 6px;
+}
+
+.home .heading>a:hover {
+    background-color: blue;
+    box-shadow: 0 0 20px blue;
+    color: white;
+    transition: .2s ease-out;
+}
+
+.home .heading .icon {
+    display: flex;
+    gap: 18px;
+    margin: 12px 0px;
+}
+
+.home .heading .icon a {
+    padding: 0 0;
+    font-size: 25px;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    color: rgb(0, 154, 203);
+    background: #000029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.home .heading .icon a:hover {
+    background-color: var(--clr);
+    color: white;
+    transition: .2s;
+}
+
+.home .photo {
+    box-shadow: 0 0 20px orangered;
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .photo img {
+    height: 300px;
+    width: 300px;
+}
+
+/* ----------------------------About---------------------------- */
+
+.about {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .heading {
+    font-size: 34px;
 }
