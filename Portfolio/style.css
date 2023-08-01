@@ -7,6 +7,10 @@
     font-family: 'IBM Plex Serif', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     z-index: 100;
     position: relative;
@@ -237,7 +241,7 @@ nav .navbar ul li a:hover {
 .about {
     height: 100vh;
     width: 100%;
-    /* background-color: #f1f1f1; */
+    background-color: #f1f1f1;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -245,4 +249,87 @@ nav .navbar ul li a:hover {
 
 .about .heading {
     font-size: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .heading i {
+    margin: 0px 13px;
+}
+
+.about .detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 64%;
+    gap: 6rem;
+}
+
+.about .detail .photo {
+    display: flex;
+    align-items: center;
+}
+
+.about .detail .photo img {
+    height: 23rem;
+    width: 17rem;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 3px 3px 10px #333;
+    filter: grayscale();
+}
+
+.about .detail .photo img:hover {
+    filter: none;
+    transition: .2s;
+}
+
+.about .detail .info {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+}
+
+.about .detail .info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.about .detail .info>span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.about .detail .info p {
+    margin: 9px 0;
+}
+
+.about .detail .info p span {
+    color: blue;
+}
+
+.about .detail .info a {
+    color: white;
+    background-color: rgb(0, 0, 107);
+    width: 127px;
+    height: 52px;
+    margin: 2rem 0;
+    text-align: center;
+    padding: 11px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    overflow-y: hidden;
+}
+
+.about .detail .info a:hover {
+    background-color: rgb(0, 0, 68);
+    transition: .3s;
+}
+
+.about .detail .info a i {
+    margin: 0 4px;
 }
