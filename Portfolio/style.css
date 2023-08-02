@@ -11,6 +11,20 @@ html {
     scroll-behavior: smooth;
 }
 
+/* --------------------Scroll Animation-------------------- */
+.hidden {
+    transform: translatey(-70px);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.show-animate {
+    transform: translatey(0px);
+    opacity: 10;
+    transition: all 1s ease-in-out;
+}
+
+/* -------------------------header------------------------- */
 header {
     z-index: 100;
     position: relative;
@@ -347,18 +361,6 @@ nav .navbar ul li a:hover {
     margin: 0 4px;
 }
 
-/* --------------------Scroll Animation-------------------- */
-.hidden {
-    transform: translatey(-50px);
-    color: transparent;
-    transition: all 1s ease-in-out;
-}
-
-.show-animate {
-    transform: translatey(0px);
-    color: black;
-    transition: all 1s ease-in-out;
-}
 
 /* -----------------------Skills----------------------- */
 .skills {
@@ -421,5 +423,8 @@ nav .navbar ul li a:hover {
 
 .skills .icon .box:hover {
     background-color: #02000e;
-    transition: 300ms;
+    transition: 100ms;
+    backdrop-filter: calc(10px);
+    box-shadow: 3px 3px 10px black;
+    transform: scale(1.1);
 }
