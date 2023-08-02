@@ -19,7 +19,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Contact</a></li>
@@ -32,14 +32,14 @@
         <div class="heading">
             <h1>Hi There,</h1>
             <h1>I'm Sameer <span>Chauhan</span></h1>
-            <div class="dynamic">
+            <div class="dynamic hidden">
                 <p class="static-txt">I Am Into</p>
                 <ul class="dynamic-txt">
                     <li>Web Development</li>
                     <li>Web Designing</li>
                 </ul>
             </div>
-            <a class="btn" href="#">About Me<i class="fa-sharp fa-solid fa-arrow-down"></i></a>
+            <a class="btn hidden" href="#">About Me<i class="fa-sharp fa-solid fa-arrow-down"></i></a>
             <div class="icon">
                 <a href="#" style="--clr:rgb(0, 154, 203)"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#" style="--clr:rgb(0, 154, 203)"><i class="fa-brands fa-github"></i></a>
@@ -64,18 +64,72 @@
                 <img src="photo.jpg" alt="">
             </div>
             <div class="info">
-                <h1>I'm Sameer Chauhan</h1>
-                <span>Full Stack Developer</span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium dolore aspernatur saepe ad,
+                <h1 class="hidden">I'm Sameer Chauhan</h1>
+                <span class="hidden">Full Stack Developer</span>
+                <p class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium dolore
+                    aspernatur saepe ad,
                     temporibus rem velit dolorum possimus pariatur? Eius illo sequi quae odit quibusdam suscipit enim
                     temporibus laborum ipsum?</p>
-                <p><span>Email :</span> sameerchauhan380@gmail.com</span></p>
-                <p><span>Place :</span> Gorakhpur, India 273003</span></p>
-                <a href="">Resume<i class="fa-solid fa-arrow-right"></i></a>
+                <p class="hidden"><span>Email :</span> sameerchauhan380@gmail.com</span></p>
+                <p class="hidden"><span>Place :</span> Gorakhpur, India 273003</span></p>
+                <a class="hidden" href="">Resume<i class="fa-solid fa-arrow-right"></i></a>
 
             </div>
         </div>
     </section>
+
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h1><i class="fa-sharp fa-solid fa-laptop-code"></i>Skills & <span>Abilities</span></h1>
+        </div>
+        <div class="icon hidden">
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-3-1174937.png?f=webp&w=256" alt="">
+                <h2>NodeJS</h2>
+            </div>
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png?f=webp&w=256" alt="">
+                <h2>ExpressJS</h2>
+            </div>
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-html5-40-1175193.png?f=webp&w=256" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-css3-11-1175239.png?f=webp&w=256" alt="">
+                <h2>CSS</h2>
+            </div>
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-3521515-2945018.png?f=webp&w=256"
+                    alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="box hidden"><img src="https://i.gyazo.com/4b6b2417ab42ad3c13f6887618b089a5.png" alt="">
+                <h2>C++</h2>
+            </div>
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp&w=256"
+                    alt="">
+                <h2>Python</h2>
+            </div>
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-bootstrap-226077.png?f=webp&w=256" alt="">
+                <h2>Bootstrap</h2>
+            </div>
+            <div class="box hidden"><img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-3521676-2945120.png?f=webp&w=256"
+                    alt="">
+                <h2>MongoDB</h2>
+            </div>
+            <div class="box hidden"><img style='filter:invert()'
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-github-5285244-4406681.png?f=webp&w=256"
+                    alt="">
+                <h2>GitHub</h2>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects"></section>
 </body>
+<script src="index.js"></script>
 
 </html>

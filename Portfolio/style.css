@@ -296,7 +296,7 @@ nav .navbar ul li a:hover {
 .about .detail .info h1 {
     font-size: 2rem;
     font-weight: bold;
-
+    transition-delay: 100ms;
 }
 
 .about .detail .info>span {
@@ -306,6 +306,18 @@ nav .navbar ul li a:hover {
 
 .about .detail .info p {
     margin: 9px 0;
+}
+
+.about .detail .info p:nth-child(1) {
+    transition-delay: 200ms;
+}
+
+.about .detail .info p:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.about .detail .info p:nth-child(3) {
+    transition-delay: 400ms;
 }
 
 .about .detail .info p span {
@@ -323,6 +335,7 @@ nav .navbar ul li a:hover {
     border-radius: 8px;
     text-decoration: none;
     overflow-y: hidden;
+    transition-delay: 400ms;
 }
 
 .about .detail .info a:hover {
@@ -332,4 +345,81 @@ nav .navbar ul li a:hover {
 
 .about .detail .info a i {
     margin: 0 4px;
+}
+
+/* --------------------Scroll Animation-------------------- */
+.hidden {
+    transform: translatey(-50px);
+    color: transparent;
+    transition: all 1s ease-in-out;
+}
+
+.show-animate {
+    transform: translatey(0px);
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+/* -----------------------Skills----------------------- */
+.skills {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(61 0 142);
+}
+
+.skills .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .heading h1 i {
+    margin: 0 5px;
+}
+
+.skills .heading h1 {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.skills .heading h1 span {
+    color: yellow;
+}
+
+.skills .icon {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    margin: 2rem 8rem;
+    background-color: rgb(30 0 70);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 83%;
+    height: 84%;
+}
+
+.skills .icon .box {
+    height: 162px;
+    width: 159px;
+    background-color: #050026;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills .icon .box img {
+    height: 100px;
+}
+
+.skills .icon .box h2 {
+    color: white;
+}
+
+.skills .icon .box:hover {
+    background-color: #02000e;
+    transition: 300ms;
 }
