@@ -43,6 +43,13 @@ nav {
 nav .heading h1 {
     margin: 0 48px;
     padding: 0 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .heading h1 img {
+    height: 50px;
 }
 
 nav .navbar {
@@ -177,11 +184,10 @@ nav .navbar ul li a:hover {
 .home .heading>a {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 18px;
     background-color: transparent;
     border: 1px solid blue;
     color: blue;
-    padding: 6px 11px;
     border-radius: 32px;
     outline: none;
     margin: 7px 0;
@@ -189,6 +195,7 @@ nav .navbar ul li a:hover {
     height: 3rem;
     text-decoration: none;
     font-size: 17px;
+    gap: 6px;
 }
 
 .home .heading>a>i {
@@ -201,8 +208,6 @@ nav .navbar ul li a:hover {
     outline: none;
     width: 17px;
     height: 17px;
-    padding: 0 6px;
-    margin: 0 6px;
 }
 
 .home .heading>a:hover {
@@ -210,6 +215,7 @@ nav .navbar ul li a:hover {
     box-shadow: 0 0 20px blue;
     color: white;
     transition: .2s ease-out;
+    gap: 12px;
 }
 
 .home .heading .icon {
@@ -350,23 +356,24 @@ nav .navbar ul li a:hover {
     width: 127px;
     height: 52px;
     margin: 2rem 0;
-    text-align: center;
-    padding: 11px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
     border-radius: 8px;
     text-decoration: none;
     outline: none;
     overflow-y: hidden;
     transition-delay: 400ms;
+    gap: 6px;
 }
 
 .about .detail .info a:hover {
     background-color: rgb(0, 0, 68);
     transition: .3s;
+    gap: 12px;
 }
 
-.about .detail .info a i {
-    margin: 0 4px;
-}
+
 
 
 /* -----------------------Skills----------------------- */
@@ -586,4 +593,121 @@ nav .navbar ul li a:hover {
 
 .education .container .box .detail p {
     margin: 1rem 0;
+}
+
+/* -----------------Contact----------------- */
+.contact {
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(31, 108, 252);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact .heading h1 {
+    font-size: 2.3rem;
+    margin: 7px 0;
+    color: black;
+}
+
+.contact .heading span {
+    color: rgb(240 240 240);
+}
+
+.contact .heading i {
+    margin: 7px;
+}
+
+.contact .container {
+    height: 27rem;
+    width: 73%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.contact .container .info {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: 25rem;
+}
+
+
+.contact .container .info input::placeholder {
+    font-size: 1.1rem;
+}
+
+.contact .container .info input {
+    z-index: 1;
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid black;
+    background-color: rgb(223, 242, 250);
+    font-size: 1.1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact .container .info input:focus {
+    border: 2px solid purple;
+}
+
+.contact .container .info textarea::placeholder {
+    font-size: 1.1rem;
+}
+
+.contact .container .info textarea {
+    width: 100%;
+    height: 8rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-color: rgb(223, 242, 250);
+    outline: none;
+}
+
+.contact .container .info textarea:focus {
+    border: 2px solid purple;
+}
+
+.contact .container .info a {
+    height: 3rem;
+    width: 8rem;
+    background-color: rgb(76, 0, 255);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+    margin: 0 1rem;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.contact .container .info a:hover {
+    background-color: rgba(76, 0, 255, 0.842);
+    gap: 12px;
+    transition: 200ms;
 }
