@@ -14,7 +14,7 @@ html {
 /* --------------------Scroll Animation-------------------- */
 .hidden {
     transform: translatey(-70px);
-    transition: all 1s ease-in-out;
+    transition: all 1s;
     opacity: 0;
 }
 
@@ -81,6 +81,7 @@ nav .navbar ul li a::after {
     left: 10px;
     bottom: 10px;
     border-radius: 20px;
+    outline: none;
     transition: 150ms;
 }
 
@@ -182,6 +183,7 @@ nav .navbar ul li a:hover {
     color: blue;
     padding: 6px 11px;
     border-radius: 32px;
+    outline: none;
     margin: 7px 0;
     width: 9rem;
     height: 3rem;
@@ -196,6 +198,7 @@ nav .navbar ul li a:hover {
     background-color: white;
     color: blue;
     border-radius: 10px;
+    outline: none;
     width: 17px;
     height: 17px;
     padding: 0 6px;
@@ -221,6 +224,7 @@ nav .navbar ul li a:hover {
     height: 43px;
     width: 43px;
     border-radius: 50%;
+    outline: none;
     color: rgb(0, 154, 203);
     background: #000029;
     display: flex;
@@ -238,6 +242,7 @@ nav .navbar ul li a:hover {
 .home .photo {
     box-shadow: 0 0 20px orangered;
     border-radius: 50%;
+    outline: none;
     width: 380px;
     height: 380px;
     display: flex;
@@ -291,6 +296,7 @@ nav .navbar ul li a:hover {
     height: 23rem;
     width: 17rem;
     border-radius: 20px;
+    outline: none;
     outline: none;
     box-shadow: 3px 3px 10px #333;
     filter: grayscale();
@@ -348,6 +354,7 @@ nav .navbar ul li a:hover {
     padding: 11px 0;
     border-radius: 8px;
     text-decoration: none;
+    outline: none;
     overflow-y: hidden;
     transition-delay: 400ms;
 }
@@ -395,6 +402,7 @@ nav .navbar ul li a:hover {
     margin: 2rem 8rem;
     background-color: rgb(30 0 70);
     border-radius: 15px;
+    outline: none;
     align-items: center;
     justify-content: center;
     width: 83%;
@@ -427,4 +435,155 @@ nav .navbar ul li a:hover {
     backdrop-filter: calc(10px);
     box-shadow: 3px 3px 10px black;
     transform: scale(1.1);
+}
+
+/* --------------------Project-------------------- */
+.projects {
+    background-color: rgb(1, 1, 37);
+    width: 100%;
+    height: 100vh;
+}
+
+.projects .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .heading h1 {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.projects .heading h1 span {
+    color: yellow;
+}
+
+.projects .heading h1 i {
+    margin: 0px 5px;
+}
+
+.projects .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 84%;
+    margin: 2rem 0rem;
+
+}
+
+.projects .container .box {
+    height: 230px;
+    width: 407px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin: 0rem 2rem;
+}
+
+.projects .container .box h1 {
+    position: absolute;
+    z-index: 2;
+    bottom: 1px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border-bottom-right-radius: 10px;
+    background-color: yellow;
+    text-align: center;
+    padding: 0.2rem 2rem;
+}
+
+.projects .container .box video {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    box-shadow: 3px 3px 9px black;
+    position: relative;
+}
+
+.projects .container .box:hover {
+    transform: scale(1.1);
+    transition: all 200ms;
+}
+
+/* ----------------------Education---------------------- */
+.education {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(223, 242, 250);
+}
+
+.education .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.education .heading h1 {
+    font-size: 2.3rem;
+    color: black;
+}
+
+.education .heading span {
+    color: rgb(61 0 142);
+}
+
+.education .heading i {
+    margin: 7px;
+}
+
+.education .heading p {
+    margin: 7px;
+    font-size: 1.1rem;
+}
+
+.education .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 84%;
+}
+
+.education .container .box {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 2px 2px 10px #333;
+}
+
+.education .container .box:hover {
+    box-shadow: 5px 5px 10px #333;
+    transition: 1ms;
+}
+
+.education .container .box img {
+    height: 100%;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+}
+
+.education .container .box:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.education .container .box .detail {
+    padding: 1rem;
+}
+
+.education .container .box .detail p {
+    margin: 1rem 0;
 }
